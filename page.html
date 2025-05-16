@@ -1,0 +1,473 @@
+<!-- <i class="fi fi-rr-settings"></i> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+body{
+    margin-top: 20px;
+    background-color: rgb(8 15 44);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#lengthLine{
+    display: flex;
+    
+    width: 80vw;
+    height: 10vh;
+    background-color: rgb(31 37 53);
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    margin-top: 50px;
+    margin: auto;
+    color: white;
+    justify-content: space-between;
+}
+.logo {
+    width:60px;
+    /* border: 1px solid red; */
+    margin-left: 15px;
+}
+.logo1 {
+    
+    width:60px;
+    /* border: 1px solid red; */
+    margin-left: 15px;
+}
+.logo{
+    background-color: rgb(58, 75, 122);
+    width: 43px;
+    height: 43px;
+    margin-top: 9px;
+    margin-right: 14px;
+    border-radius: 10px;
+}
+#list{
+    /* margin-top: 20px; */
+    
+    width: 80%;
+    height: 10%;
+    /* border: 1px solid white; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    #one{
+        /* border: 1px solid red; */
+        width: 200px;
+    }
+    #two{
+        
+        width: 300px;
+        height: 60px;
+        /* border: 1px solid red; */
+        display: flex;
+        gap: 10px;
+        
+        /* text-align: center; */
+    }
+    #two .small{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 50px;
+        border-radius: 30px;
+        /* border: 1px solid yellow; */
+        background-color: rgb(47 53 75);
+    }
+}
+#two{
+   
+    #all{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+        width: 100px;
+        height: 50px;
+        border-radius: 30px;
+    }
+}
+#space{
+height: 30px;
+}
+#parent{
+    width: 80%;
+    height: 1070px;
+    /* border: 1px solid red; */
+    
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#parent .box{
+    /* border: 1px solid red; */
+    width: 340px;
+    height: 250px;
+    border-radius: 25px;
+    background-color: rgb(31 37 53);
+
+}
+#firstTwo{
+    display: flex;
+}
+.box #img img{
+    margin-top: 20px;
+    width: 70px;
+    height: 50px;
+    /* border: 1px solid red; */
+  
+}
+ #text {
+    margin-top: 10px;
+    width: 250px;
+    height: 100px;
+    /* border: 1px solid blue; */
+    vertical-align: middle;
+    .p2{
+        opacity: 0.5;
+    }
+ }
+ #main{
+      width: 300px ;
+      margin: auto;
+      /* border: 1px solid green; */
+      margin-top: 70px;
+      display: flex;
+      justify-content: space-between;
+      button{
+        width: 67px;
+        border-radius: 20px;
+        height: 33px;
+        color: white;
+        background-color: rgb(30 37 57);
+        border: 1px solid;
+      }
+      input{
+        width: 35px;
+        height: 30px;
+      }
+       input:checked + #menage{
+    left: 30px;
+     background-color: green;
+ } 
+ #menage{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        background-color: white
+    
+    }
+      
+ }
+ label{
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background-color: red;
+    border-radius: 30px;
+    
+      
+ }
+ 
+  
+
+ #extention{
+   
+    display: flex;
+    width: 250px;
+ }
+ #new{
+    margin-inline: 13px;
+    margin-block: 15px;
+ }
+
+</style>
+
+</head>
+<body>
+   
+  <div id="lengthLine"> 
+    <div id="extention">
+ <img class="logo1"  src="logo.PNG" alt=""> 
+ <h1 id="new">Extention</h1>
+</div>
+ <img class="logo" src="settings-removebg-preview.png" alt="">
+  </div> 
+  <div id="space"></div> 
+  <div id="list">
+    <div id="one">
+    <h3>Extention List</h3>
+</div>
+    <div id="two">
+        <div  id="all" > All</div>
+        <div class="small"> Active</div>
+        <div class="small"> Inactive</div>
+        
+    </div>
+  </div>
+  
+<div id="parent">
+
+<div class="box">
+    <div id="firstTwo">
+    <div id="img">
+    <img src="logo-devlens.svg" alt="">
+</div>
+<div id="text">
+    <p> Delven1 </p>
+   <p class="p2">Quickly inspect pages and layout and viualize elements boundries</p>
+</div>
+</div>
+
+<div id="main">
+ <button>Remove</button>
+ <label for="pasand">
+    
+<input id="pasand" type="checkbox" hidden>
+<div id="menage"></div>
+</label>
+</div>
+</div>
+
+
+<div class="box">
+
+
+    <div id="firstTwo">
+        <div id="img">
+        <img src="logo-style-spy.svg" alt="">
+    </div>
+    <div id="text">
+        <p> StyleSpy  </p>
+       <p class="p2">Instantly analyze and copy CSS from any webpage element</p>
+    </div>
+    </div>
+    
+    <div id="main">
+        <button>Remove</button>
+        <label for="pasand">
+           
+       <input id="pasand" type="checkbox" hidden>
+       <div id="menage"></div>
+       </label>
+       </div>
+
+
+
+</div>
+<div class="box">
+    <div id="firstTwo">
+        <div id="img">
+        <img src="logo-speed-boost.svg" alt="">
+    </div>
+    <div id="text">
+        <p>SpeedBoost </p>
+       <p class="p2">Optimizes brower resource Usage to accelerate page loading</p>
+    </div>
+    </div>
+    
+    <div id="main">
+        <button>Remove</button>
+        <label for="pasand">
+           
+       <input id="pasand" type="checkbox" hidden>
+       <div id="menage"></div>
+       </label>
+       </div>
+</div>
+<div class="box">
+    <div id="firstTwo">
+        <div id="img">
+        <img src="logo-json-wizard.svg" alt="">
+    </div>
+    <div id="text">
+        <p>JSONWizard </p>
+       <p class="p2">Formates,validates,and prettifies JSON responses in-browser</p>
+    </div>
+    </div>
+    
+    <div id="main">
+        <button>Remove</button>
+        <label for="pasand">
+           
+       <input id="pasand" type="checkbox" hidden>
+       <div id="menage"></div>
+       </label>
+       </div>
+</div>
+<div class="box">
+    <div id="firstTwo">
+        <div id="img">
+        <img src="logo-tab-master-pro.svg" alt="">
+    </div>
+    <div id="text">
+        <p>TabMaster Pro </p>
+       <p class="p2">Organize browser tab into groups and sessions.</p>
+    </div>
+    </div>
+    
+    <div id="main">
+        <button>Remove</button>
+        <label for="pasand">
+           
+       <input id="pasand" type="checkbox" hidden>
+       <div id="menage"></div>
+       </label>
+       </div>
+</div>
+<div class="box">
+    <div id="firstTwo">
+        <div id="img">
+        <img src="logo-viewport-buddy.svg" alt="">
+    </div>
+    <div id="text">
+        <p>ViewportBuddy </p>
+       <p class="p2">Simulates various secreen resolutions directly within the browser</p>
+    </div>
+    </div>
+    
+    <div id="main">
+        <button>Remove</button>
+        <label for="pasand">
+           
+       <input id="pasand" type="checkbox" hidden>
+       <div id="menage"></div>
+       </label>
+       </div>
+</div>
+<div class="box">
+    <div id="firstTwo">
+        <div id="img">
+        <img src="logo-markup-notes.svg" alt="">
+    </div>
+    <div id="text">
+        <p>Markup Notes </p>
+       <p class="p2">Enables annotation and notes directly onto webpages for collaborative 
+          debugging.
+       </p>
+    </div>
+    </div>
+    
+    <div id="main">
+        <button>Remove</button>
+        <label for="pasand">
+           
+       <input id="pasand" type="checkbox" hidden>
+       <div id="menage"></div>
+       </label>
+       </div>
+</div>
+<div class="box">
+    <div id="firstTwo">
+        <div id="img">
+        <img src="logo-grid-guides.svg" alt="">
+    </div>
+    <div id="text">
+        <p>GridGuides</p>
+       <p class="p2">Overlay customizable grids and alignment guides on any webpage.</p>
+    </div>
+    </div>
+    
+    <div id="main">
+        <button>Remove</button>
+        <label for="pasand">
+           
+       <input id="pasand" type="checkbox" hidden>
+       <div id="menage"></div>
+       </label>
+       </div>
+</div>
+<div class="box">
+    <div id="firstTwo">
+        <div id="img">
+        <img src="logo-palette-picker.svg" alt="">
+    </div>
+    <div id="text">
+        <p>Platter Picker </p>
+       <p class="p2">Instantly extracts color plattes from any webpage</p>
+    </div>
+    </div>
+    
+    <div id="main">
+        <button>Remove</button>
+        <label for="pasand">
+           
+       <input id="pasand" type="checkbox" hidden>
+       <div id="menage"></div>
+       </label>
+       </div>
+</div>
+<div class="box">
+    <div id="firstTwo">
+        <div id="img">
+        <img src="logo-link-checker.svg" alt="">
+    </div>
+    <div id="text">
+        <p>LinkChecker </p>
+       <p class="p2">Scans and highlights broken links on any page</p>
+    </div>
+    </div>
+    
+    <div id="main">
+        <button>Remove</button>
+        <label for="pasand">
+           
+       <input id="pasand" type="checkbox" hidden>
+       <div id="menage"></div>
+       </label>
+       </div>
+</div>
+<div class="box">
+    <div id="firstTwo">
+        <div id="img">
+        <img src="logo-dom-snapshot.svg" alt="">
+    </div>
+    <div id="text">
+        <p>DOM Snapshot </p>
+       <p class="p2">Capture and export DOM structures quickely.</p>
+    </div>
+    </div>
+    
+    <div id="main">
+        <button>Remove</button>
+        <label for="pasand">
+           
+       <input id="pasand" type="checkbox" hidden>
+       <div id="menage"></div>
+       </label>
+       </div>
+</div>
+<div class="box">
+    <div id="firstTwo">
+        <div id="img">
+        <img src="logo-console-plus.svg" alt="">
+    </div>
+    <div id="text">
+        <p>ConsolePlus </p>
+       <p class="p2">Enhanced developer console with advanced filtering and logging.</p>
+    </div>
+    </div>
+    
+    <div id="main">
+        <button>Remove</button>
+        <label for="pasand">
+           
+       <input id="pasand" type="checkbox" hidden checked>
+       <div id="menage"></div>
+       </label>
+       </div>
+</div>
+
+</div>
+
+</body>
+</html>
